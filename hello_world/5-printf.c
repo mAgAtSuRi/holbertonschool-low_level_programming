@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main : Start of programm
+ * main - Start of programm
  *
- * Description : Prints the text in printf
+ * Description - Prints the text in printf
  *
- * Return : 0
+ * Return - 0
  */
 int main(void)
 {
