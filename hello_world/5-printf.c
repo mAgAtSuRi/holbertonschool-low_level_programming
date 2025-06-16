@@ -3,8 +3,6 @@
 /**
  * main - Start of programm
  *
- * Description - Prints the text in printf
- *
  * Return - 0
  */
 int main(void)
