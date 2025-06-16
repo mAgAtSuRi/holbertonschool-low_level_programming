@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
- *print the text inside puts
+ * main - Entry point of the program
+ *
+ * Description: Prints the text inside puts
+ *
+ * Return: Always 0
  */
 int main(void)
 {
