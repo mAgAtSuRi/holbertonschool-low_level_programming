@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+ * main - entry point
+ *
+ * Description - print base 16 numbers
+ *
+ * Return: always 0
+ */
+int main(void)
+{
+	int i;
+	char c;
+
+	for (i = 0; i <= 9; i++)
+		putchar(i + '0');
+	for (c = 'a'; c <= 'e'; c++)
+		putchar(c);
+	putchar('\n');
+	return (0);
+}
