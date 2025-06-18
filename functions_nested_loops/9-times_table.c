@@ -23,6 +23,7 @@ void times_table(void)
 				result = result / 10;
 				_putchar(result + '0');
 				_putchar(result2 + '0');
+			}
 			else if (result >= 10)
 			{
 				result2 = result % 10;
