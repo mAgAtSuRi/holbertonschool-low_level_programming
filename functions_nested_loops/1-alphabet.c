@@ -1,22 +1,22 @@
 #include "main.h"
 
 /**
- * main - entry point
- *
- * Description
- *
- * Return: always 0
+ * print_alphabet - prints the alphabet
  */
 void print_alphabet(void)
 {
 	char c;
-	char alphabet;
 
 	for (c = 'a'; c <= 'z'; c++)
-		alphabet += _putchar(c);
-	alphabet += _putchar('\n');
+		_putchar(c);
+	_putchar('\n');
 }
 
+/**
+ * main -entry point
+ *
+ * Return: always 0
+ */
 int main(void)
 {
 	print_alphabet();
