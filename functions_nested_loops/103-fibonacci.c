@@ -15,7 +15,7 @@ int main(void)
 	long int sum_even = 0;
 	long int next_n;
 
-	while ((num1 && num2) < 4000000)
+	while (num2 < 4000000)
 	{
 		if (num1 % 2 == 0)
 			sum_even += num1;
