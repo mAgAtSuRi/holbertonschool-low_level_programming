@@ -17,8 +17,8 @@ int main(void)
 	printf("%d, %d", num1, num2);
 	while (i <= 50)
 	{
-		putchar(",");
-		putchar(" ");
+		putchar(',');
+		putchar(' ');
 		sum = num1 + num2;
 		printf("%d", sum);
 		num1 = num2;
