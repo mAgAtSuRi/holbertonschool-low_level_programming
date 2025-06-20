@@ -14,7 +14,6 @@ int main(void)
 	long int num2 = 2;
 	long int sum;
 
-	printf("%ld, %ld", num1, num2);
 	for (i = 1; i <= 50; i++)
 	{
 		if (i == 1)
@@ -29,5 +28,6 @@ int main(void)
 			num2 = sum;
 		}
 	}
+	putchar("\n");
 	return (0);
 }
