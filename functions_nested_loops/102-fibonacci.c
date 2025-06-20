@@ -18,9 +18,9 @@ int main(void)
 	while (i <= 50)
 	{
 		if (i == 0)
-			printf("%d", num1);
+			printf("%ld", num1);
 		else if (i == 2)
-			printf(", %d", num2);
+			printf(", %ld", num2);
 		else
 		{
 			sum = num1 + num2;
