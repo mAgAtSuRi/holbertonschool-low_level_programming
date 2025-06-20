@@ -10,9 +10,9 @@
 int main(void)
 {
 	int i = 1;
-	unsigned int num1 = 1;
-	unsigned int num2 = 2;
-	unsigned int sum;
+	long int num1 = 1;
+	long int num2 = 2;
+	long int sum;
 
 	printf("%d, %d", num1, num2);
 	while (i <= 50)
