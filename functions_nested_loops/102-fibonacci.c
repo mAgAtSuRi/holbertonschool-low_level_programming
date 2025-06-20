@@ -15,7 +15,7 @@ int main(void)
 	long int sum;
 
 	printf("%ld, %ld", num1, num2);
-	while (i <= 50)
+	while (i <= 48)
 	{
 		putchar(',');
 		putchar(' ');
