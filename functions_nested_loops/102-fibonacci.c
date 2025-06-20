@@ -17,7 +17,7 @@ int main(void)
 	for (i = 1; i <= 50; i++)
 	{
 		if (i == 1)
-			printf("%dd", i);
+			printf("%d", i);
 		else if (i == 2)
 			printf(", %d", i);
 		else
