@@ -10,7 +10,6 @@
  */
 int main(void)
 {
-	int i;
 	long int num1 = 1;
 	long int num2 = 2;
 	long int sum_even = 0;
@@ -24,7 +23,7 @@ int main(void)
 			sum_even += num2;
 		next_n = num1 + num2;
 		num1 = num2;
-		num2 = next_n
+		num2 = next_n;
 	}
 	printf("%ld", sum_even);
 	printf("\n");
