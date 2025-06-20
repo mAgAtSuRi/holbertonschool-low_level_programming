@@ -15,13 +15,20 @@ int main(void)
 	long int sum;
 
 	printf("%ld, %ld", num1, num2);
-	while (i <= 48)
+	while (i <= 50)
 	{
-		sum = num1 + num2;
-		printf(", %ld", sum);
-		num1 = num2;
-		num2 = sum;
-		i++;
+		if (i == 0)
+			printf("%d", num1);
+		else if (i == 2)
+			printf(", %d", num2);
+		else
+		{
+			sum = num1 + num2;
+			printf(", %ld", sum);
+			num1 = num2;
+			num2 = sum;
+			i++;
+		}
 	}
 	return (0);
 }
