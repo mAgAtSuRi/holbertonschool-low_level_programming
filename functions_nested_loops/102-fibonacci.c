@@ -17,7 +17,7 @@ int main(void)
 	printf("%ld, %ld", num1, num2);
 	for (i = 1; i <= 50; i++)
 	{
-		if (i == 0)
+		if (i == 1)
 			printf("%ld", num1);
 		else if (i == 2)
 			printf(", %ld", num2);
