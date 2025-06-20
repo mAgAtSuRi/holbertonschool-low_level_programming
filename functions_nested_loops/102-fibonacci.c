@@ -28,6 +28,6 @@ int main(void)
 			num2 = sum;
 		}
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
