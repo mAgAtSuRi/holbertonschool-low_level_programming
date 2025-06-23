@@ -10,6 +10,7 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
+		// Ma technique
 		for (i = 1; i <= size; i++)
 		{
 			for (j = size - i; j > 0; j--)
@@ -18,6 +19,14 @@ void print_triangle(int size)
 				_putchar('#');
 			_putchar('\n');
 		}
+		/* Autre technique
+		for (j = 1; j <= size; j++)
+		{
+			if (j <= size - i)
+				_putchar(' ');
+			else
+				_putchar('#');
+		*/
 	}
 	else
 		_putchar('\n');
