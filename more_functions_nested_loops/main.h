@@ -12,5 +12,6 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int);
 void print_triangle(int);
+int check_prime(int);
 
 #endif
