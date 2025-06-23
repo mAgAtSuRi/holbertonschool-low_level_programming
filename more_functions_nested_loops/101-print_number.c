@@ -6,8 +6,6 @@
  */
 void print_number(int n)
 {
-	int i = 0;
-	int j;
 	float k = n;
 
 	if (n < 0)
@@ -17,6 +15,7 @@ void print_number(int n)
 	}
 	if (k  >= 10)
 		print_number(k / 10);
-
-	_putchar(k % 10 + '0');
+	
+	n = k;
+	_putchar(n % 10 + '0');
 }
