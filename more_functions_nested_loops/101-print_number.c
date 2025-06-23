@@ -8,24 +8,15 @@ void print_number(int n)
 {
 	int i = 0;
 	int j;
-	float k;
+	float k = n;
 
 	if (n < 0)
 	{
 		n = -n;
 		_putchar('-');
 	}
-	while (n >= 10)
-	{	
-		k = n / 10;
-		n = k;
-		i++;
-	}
-	_putchar(n + '0');
-	for (j = 0; j < i; j++)
-	{
-		k = k * 10;
-		n = k;
-		_putchar(n % 10 + '0');
-	}
+	if (k  >= 10)
+		print_number(k / 10);
+
+	_putchar(k % 10 + '0');
 }
