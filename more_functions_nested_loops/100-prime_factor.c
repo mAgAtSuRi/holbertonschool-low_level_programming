@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * check_prime - check if a number is prime
+ * @n: number to check
  *
- * Description - prints largest prime number
- *
- * Return: always 0
+ * Return: 1 if it's prime otherwise 0
  */
 int check_prime(int n)
 {
@@ -22,6 +21,13 @@ int check_prime(int n)
         return (1);
 }
 
+/**
+ * main - entry point
+ *
+ * Description - prints largest prime number
+ *
+ * Return: always 0
+ */
 int main(void)
 {
 	int n = 1231952;
