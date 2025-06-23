@@ -8,15 +8,20 @@
  *
  * Return: always 0
  */
+int check_prime(int);
+
 int main(void)
 {
 	int n = 1231952;
+	int i;
 
 	while (check_prime(n) == 0)
 	{
 		if (n % 2 == 0)
+		{
 			printf("2,");
 			n = n / 2;
+		}
 		else 
 		{
 			for (i = 3; i <= n / 3; i += 2)
@@ -29,6 +34,6 @@ int main(void)
 			}
 		}
 	}
-	printf("%d\n", n)
-	return (0)
+	printf(",%d\n", n);
+	return (0);
 }
