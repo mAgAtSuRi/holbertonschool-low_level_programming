@@ -8,7 +8,10 @@ void print_number(int n)
 {
 	int i = 0;
 	int j;
-
+	
+	if (n < 0)
+		n = -n
+		_putchar('-');
 	while (n > 10)
 	{
 		n = n / 10;
