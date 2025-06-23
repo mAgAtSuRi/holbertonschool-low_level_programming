@@ -30,8 +30,8 @@ int check_prime(int n)
  */
 int main(void)
 {
-	int n = 1231952;
-	int i;
+	long int n = 612852475143;
+	long int i;
 
 	while (check_prime(n) == 0)
 	{
@@ -46,12 +46,12 @@ int main(void)
 			{
 				if (n % i == 0)
 				{
-					printf("%d", i);
+					printf("%ld", i);
 					n = n / i;
 				}
 			}
 		}
 	}
-	printf(",%d\n", n);
+	printf(",%ld\n", n);
 	return (0);
 }
