@@ -9,16 +9,16 @@
  */
 int check_prime(int n)
 {
-        int i;
+	int i;
 
-        if (n < 2)
-                return (0);
-        for (i = 2; i <= n / 2; i++)
-        {
-                if (n % i == 0)
-                        return (0);
-        }
-        return (1);
+	if (n < 2)
+		return (0);
+	for (i = 2; i <= n / 2; i++)
+	{
+		if (n % i == 0)
+			return (0);
+	}
+	return (1);
 }
 
 /**
@@ -37,7 +37,7 @@ int main(void)
 	{
 		if (n % 2 == 0)
 			n = n / 2;
-		else 
+		else
 		{
 			for (i = 3; i <= n / 3; i += 2)
 			{
