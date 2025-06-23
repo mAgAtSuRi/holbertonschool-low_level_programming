@@ -18,7 +18,7 @@ void print_number(int n)
 	while (n >= 10)
 	{	
 		k = n / 10;
-		n = n / 10;
+		n = k;
 		i++;
 	}
 	_putchar(n + '0');
