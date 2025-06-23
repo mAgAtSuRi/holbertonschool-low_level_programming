@@ -36,22 +36,16 @@ int main(void)
 	while (check_prime(n) == 0)
 	{
 		if (n % 2 == 0)
-		{
-			printf("2,");
 			n = n / 2;
-		}
 		else 
 		{
 			for (i = 3; i <= n / 3; i += 2)
 			{
 				if (n % i == 0)
-				{
-					printf("%ld", i);
 					n = n / i;
-				}
 			}
 		}
 	}
-	printf(",%ld\n", n);
+	printf("%ld\n", n);
 	return (0);
 }
