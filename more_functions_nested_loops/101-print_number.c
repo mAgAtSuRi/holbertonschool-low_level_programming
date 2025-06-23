@@ -9,7 +9,7 @@ void print_number(int n)
 	int i = 0;
 	int j;
 
-	while (n < 10)
+	while (n > 10)
 	{
 		n = n / 10;
 		i++;
