@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - prints odd character of a string
+ * puts2 - prints even character of a string
  * @str: string to check
  */
 void puts2(char *str)
@@ -14,4 +14,5 @@ void puts2(char *str)
 			_putchar(str[i]);
 		i++;
 	}
+	_putchar('\n');
 }
