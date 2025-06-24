@@ -18,6 +18,7 @@ int _atoi(char *s)
 			tmp = (tmp + s[i]) * 10;
 		else if (s[i] == 45)
 			neg++;
+		i++;
 	}
 	if (tmp == 0)
 		return (0);
