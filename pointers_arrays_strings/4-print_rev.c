@@ -15,17 +15,3 @@ void print_rev(char *s)
 		_putchar(s[i]);
 	_putchar('\n');
 }
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *str;
-
-    str = "12 45";
-    print_rev(str);
-    return (0);
-}
