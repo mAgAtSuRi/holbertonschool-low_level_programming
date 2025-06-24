@@ -5,4 +5,5 @@
  * @*n: pointer value to be changed
  */
 void reset_to_98(int *n)
-	int *n = 98;        
+	int *ptr = *n;
+	*ptr = 98;	
