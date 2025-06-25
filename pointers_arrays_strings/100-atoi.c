@@ -18,7 +18,7 @@ int _atoi(char *s)
 			neg++;
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			if (neg % 2 == 0 && tmp * 10 + 9 > 2147483647)
+			if (neg % 2 == 0 && tmp * 11 > 2147483647)
 				tmp = -tmp * 10 - (s[i] - 48);
 				return (tmp);
 			tmp = tmp * 10 + (s[i] - 48);
