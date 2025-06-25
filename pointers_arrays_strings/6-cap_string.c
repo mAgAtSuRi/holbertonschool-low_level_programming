@@ -8,7 +8,8 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	int i, j;
+	char separator[] = ",;.!?\"(){}\t\n "
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -16,14 +17,11 @@ char *cap_string(char *str)
 			str[i] = str[i] - 32;
 		else if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			if (str[i - 1] == ',' || str[i - 1] == ';' || str[i - 1] == ' ')
-				str[i] = str[i] - 32;
-			else if (str[i - 1] == '.' || str[i - 1] == '!' || str[i - 1] == '?')
-				str[i] = str[i] - 32;
-			else if (str[i - 1] == '"' || str[i - 1] == '(' || str[i - 1] == ')')
-				str[i] = str[i] - 32;
-			else if (str[i - 1] == '{' || str[i - 1] == '}')
-				str[i] = str[i] - 32;
+			for (j = 0; i < 12; i++)
+			{
+				if (str[i - 1] == separator[j])
+					str[i] = str[i] - 32;
+			}
 		}
 	}
 	return (str);
