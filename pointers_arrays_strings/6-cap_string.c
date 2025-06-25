@@ -17,10 +17,11 @@ char *cap_string(char *str)
 			str[i] = str[i] - 32;
 		else if (str[i] >= 'a' && str[i] <= 'z')
 		{
-			for (j = 0; i < 12; i++)
+			for (j = 0; j < 12; i++)
 			{
 				if (str[i - 1] == separator[j])
 					str[i] = str[i] - 32;
+				break;
 			}
 		}
 	}
