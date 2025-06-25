@@ -14,19 +14,18 @@ int _atoi(char *s)
 
 	while (s[i] != '\0')
 	{
-		if (s[i] >= 48 && s[i] <= 57)
+		if (s[i] == 45)
+                        neg++;
+		else if (s[i] >= 48 && s[i] <= 57)
 		{
 			tmp = tmp * 10 + (s[i] - 48);
 			if (s[i + 1] < 48 || s[i + 1] > 57)
 				break;
 		}
-		else if (s[i] == 45)
-			neg++;
 		i++;
 	}
 	if (tmp == 0)
 		return (0);
-	tmp = tmp / 10;
 	if (neg % 2 != 0)
 		tmp = -tmp;
 	return (tmp);
