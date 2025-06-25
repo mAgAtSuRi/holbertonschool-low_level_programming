@@ -27,6 +27,6 @@ int _atoi(char *s)
 	if (tmp == 0)
 		return (0);
 	if (neg % 2 != 0)
-		tmp = - tmp
+		tmp = - tmp;
 	return (tmp);
 }
