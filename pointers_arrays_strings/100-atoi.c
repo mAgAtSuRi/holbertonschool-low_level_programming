@@ -18,15 +18,7 @@ int _atoi(char *s)
 			neg++;
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			if (s[i - 1] < 48 || s[i - 1] > 57)
-			{
-				if (neg % 2 != 0)
-					tmp = -(tmp * 10 + (s[i] - 48));
-				else
-					tmp = tmp * 10 + (s[i] - 48);
-			}
-			else
-				tmp = tmp * 10 + (s[i] - 48);
+			tmp = tmp * 10 + (s[i] - 48);
 			if (s[i + 1] < 48 || s[i + 1] > 57)
 				break;
 		}
@@ -34,5 +26,7 @@ int _atoi(char *s)
 	}
 	if (tmp == 0)
 		return (0);
+	if (neg % 2 != 0)
+		tmp = - tmp
 	return (tmp);
 }
