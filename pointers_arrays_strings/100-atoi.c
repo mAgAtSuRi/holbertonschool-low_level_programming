@@ -4,7 +4,7 @@
  * _atoi - convert string to int
  * @s: string to convert
  *
- * Return the string converted in integer
+ * Return: the string converted in integer
  */
 int _atoi(char *s)
 {
@@ -16,6 +16,8 @@ int _atoi(char *s)
 	{
 		if (s[i] >= 48 && s[i] <= 57)
 			tmp = (tmp + s[i] - 48) * 10;
+			if (s[i + 1] >= 48 && s[i + 1] <= 57)
+				break;
 		else if (s[i] == 45)
 			neg++;
 		i++;
