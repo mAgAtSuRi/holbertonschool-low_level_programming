@@ -22,6 +22,8 @@ int _atoi(char *s)
 			{
 				if (neg % 2 != 0)
 					tmp = -(tmp * 10 + (s[i] - 48));
+				else
+					tmp = tmp * 10 + (s[i] - 48);
 			}
 			else
 				tmp = tmp * 10 + (s[i] - 48);
