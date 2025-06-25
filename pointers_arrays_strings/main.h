@@ -14,5 +14,6 @@ void print_array(int *, int);
 char *_strcpy(char *, char *);
 int _atoi(char *s);
 char *_strcat(char *, char *);
+char *_strncat(char *, char *, int);
 
 #endif
