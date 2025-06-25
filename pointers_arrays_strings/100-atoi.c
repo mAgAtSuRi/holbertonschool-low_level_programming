@@ -16,7 +16,7 @@ int _atoi(char *s)
 	{
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			tmp = (tmp + s[i] - 48) * 10;
+			tmp = tmp * 10 - 48 + s[i];
 			if (s[i + 1] < 48 || s[i + 1] > 57)
 				break;
 		}
