@@ -6,8 +6,6 @@
  */
 void print_number(int n)
 {
-	int i;
-
 	if (n / 10 != 0)
 		print_number(n / 10);
 	_putchar(n % 10);
