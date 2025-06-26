@@ -14,6 +14,7 @@ void print_number(int n)
 			_putchar('-');
 			_putchar(2 + '0');
 			print_number(147483648);
+			return;
 		}
 		else
 		{
