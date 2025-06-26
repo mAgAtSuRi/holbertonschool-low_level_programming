@@ -12,7 +12,6 @@ char *rot13(char *str)
 	char low[] = "abcdefghijklmnopqrstuvwxyz";
 	char low_rot13[] = "nopqrstuvwxyzabcdefghijklm";
 	char upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	//char upp_rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
