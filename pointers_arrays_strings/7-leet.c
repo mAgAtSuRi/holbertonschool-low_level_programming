@@ -9,8 +9,8 @@
 char *leet(char *str)
 {
 	int i, j;
-	char low[] = {'a', 'e', 'o', 't', 'l'};
-	char upp[] = {'A', 'E', 'O', 'T', 'L'};
+	char low[] = {'a', 'e', 'o', 't', 'i', '\0'};
+	char upp[] = {'A', 'E', 'O', 'T', 'L', '\0'};
 	int code[5] = {4, 3, 0, 7, 1};
 
 	for (i = 0;  str[i] != '\0'; i++)
@@ -18,7 +18,10 @@ char *leet(char *str)
 		for (j = 0; j < 5; j++)
 		{
 			if (str[i] == low[j] || str[i] == upp[j])
+			{
 				str[i] = code[j];
+				break;
+			}
 		}
 	}
 	return (str);
