@@ -21,7 +21,7 @@ char *cap_string(char *str)
 			{
 				if (str[i - 1] == separator[j])
 					str[i] = str[i] - 32;
-				break;
+					break;
 			}
 		}
 	}
