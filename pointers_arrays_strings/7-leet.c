@@ -9,7 +9,7 @@
 char *leet(char *str)
 {
 	int i, j;
-	char low[] = {'a', 'e', 'o', 't', 'i', '\0'};
+	char low[] = {'a', 'e', 'o', 't', 'l', '\0'};
 	char upp[] = {'A', 'E', 'O', 'T', 'L', '\0'};
 	char code[] = {'4', '3', '0', '7', '1'};
 
