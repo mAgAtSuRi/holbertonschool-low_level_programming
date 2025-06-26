@@ -9,9 +9,9 @@
 char *leet(char *str)
 {
 	int i, j;
-	char low[] = {'a', 'e', 'o', 't', 'l'}
-	char upp[] = {'A', 'E', 'O', 'T', 'L'}
-	int code[5] = {4, 3, 0, 7, 1}
+	char low[] = {'a', 'e', 'o', 't', 'l'};
+	char upp[] = {'A', 'E', 'O', 'T', 'L'};
+	int code[5] = {4, 3, 0, 7, 1};
 
 	while (str[i])
 	{
