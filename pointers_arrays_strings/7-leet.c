@@ -13,7 +13,7 @@ char *leet(char *str)
 	char upp[] = {'A', 'E', 'O', 'T', 'L'};
 	int code[5] = {4, 3, 0, 7, 1};
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0;  str[i] != '\0'; i++)
 	{
 		for (j = 0; j < 5; j++)
 		{
