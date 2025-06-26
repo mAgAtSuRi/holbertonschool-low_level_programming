@@ -9,17 +9,16 @@
 char *rot13(char *str)
 {
 	int i, j;
-	char low[] = "abcdefghijklmnopqrstuvwxyz";
-	char low_rot13[] = "nopqrstuvwxyzabcdefghijklm";
-	char upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char alph_rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 26; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (str[i] == low[j] || str[i] == upp[j])
+			if (str[i] == alph[j])
 			{
-				str[i] = low_rot13[j];
+				str[i] = alph_rot13[j];
 				break;
 			}
 		}
