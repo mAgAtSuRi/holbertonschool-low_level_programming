@@ -18,14 +18,9 @@ char *rot13(char *str)
 	{
 		for (j = 0; j < 26; j++)
 		{
-			if (str[i] == low[j])
+			if (str[i] == low[j] || str[i] == upp[j])
 			{
 				str[i] = low_rot13[j];
-				break;
-			}
-			else if (str[i] == upp[j])
-			{
-				str[i] = upp_rot13[j];
 				break;
 			}
 		}
