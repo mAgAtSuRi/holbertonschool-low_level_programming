@@ -20,13 +20,13 @@ char* infinite_add(char* n1, char* n2, char* r, int size_r)
 	while (n2[i2])
 		i2++;
 	if (size_r <= i1 + 1 || size_r <= i2 + 1)
-		return ('0');
+		return (0);
 	for (i = i1; i >= 0; i--)
 	{
 		if ((n1[i] + '0') + (n2[i] + '0') >= 10)
 			rest++;
-		n1[i] = ((n1[i] + '0') + (n2[i] + '0')) % 10;
-		n1[i - 1] = n1[i - 1] + '0' + 1;
+		r[i] = ((n1[i] + '0') + (n2[i] + '0')) % 10;
+		r[i - 1] = n1[i - 1] + '0' + 1;
 	}
-	return (n1);
+	return (r);
 }
