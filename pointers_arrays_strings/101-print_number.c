@@ -9,16 +9,22 @@ void print_number(int n)
 {
 	if (n < 0)
 	{
+		_putchar('-')
 		if (n == INT_MIN)
 		{
-			_putchar('-');
 			_putchar(2 + '0');
-			print_number(147483648);
-			return;
+			_putchar(1 + '0');
+			_putchar(4 + '0');
+			_putchar(7 + '0');
+			_putchar(4 + '0');
+			_putchar(8 + '0');
+			_putchar(3 + '0');
+			_putchar(6 + '0');
+			_putchar(4 + '0');
+			_putchar(8 + '0');
+			_putchar('-');
 		}
 		else
-		{
-			_putchar('-');
 			n = -n;
 		}
 	}
