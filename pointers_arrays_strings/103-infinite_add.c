@@ -23,9 +23,9 @@ char* infinite_add(char* n1, char* n2, char* r, int size_r)
 		return (0);
 	for (i = i1; i >= 0; i--)
 	{
-		if ((n1[i] + '0') + (n2[i] + '0') >= 10)
+		if ((n1[i] - '0') + (n2[i] - '0') >= 10)
 			rest++;
-		r[i] = ((n1[i] + '0') + (n2[i] + '0')) % 10;
+		r[i] = ((n1[i] - '0') + (n2[i] - '0')) % 10;
 		r[i - 1] = n1[i - 1] + '0' + 1;
 	}
 	return (r);
