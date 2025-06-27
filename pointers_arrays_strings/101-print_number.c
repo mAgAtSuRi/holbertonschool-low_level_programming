@@ -13,16 +13,7 @@ void print_number(int n)
 		if (n == INT_MIN)
 		{
 			_putchar(2 + '0');
-			_putchar(1 + '0');
-			_putchar(4 + '0');
-			_putchar(7 + '0');
-			_putchar(4 + '0');
-			_putchar(8 + '0');
-			_putchar(3 + '0');
-			_putchar(6 + '0');
-			_putchar(4 + '0');
-			_putchar(8 + '0');
-			_putchar('-');
+			print_number(147483648);
 		}
 		else
 			n = -n;
