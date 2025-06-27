@@ -9,7 +9,7 @@
  *
  * Return: the result in char *
  */
-char* infinite_add(char* n1, char* n2, char* r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i1 = 0, i2 = 0;
 	int i;
