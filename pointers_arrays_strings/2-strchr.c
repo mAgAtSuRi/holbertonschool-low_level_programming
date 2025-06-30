@@ -9,7 +9,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i = 0;
 	char *new;
 	int find = 1;
 
@@ -22,6 +22,7 @@ char *_strchr(char *s, char c)
 			new += s[i];
 			find = 0;
 		}
+		i++;
 	}
 	return (new);
 }
