@@ -17,7 +17,7 @@ int _strspn(char *s, char *accept)
 		len2++;
 	while (s[i])
 	{
-
+		found = 0;
 		for (j = 0; j < len2; j++)
 		{
 			if (s[i] == accept[j])
