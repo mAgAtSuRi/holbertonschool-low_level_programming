@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 		if (count == len2)
-			return (haystack[pos]);
+			return (&haystack[pos]);
 		count = 0;
 	}
 	return (NULL);
