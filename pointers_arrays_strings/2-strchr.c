@@ -10,19 +10,17 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	char *new;
-	int find = 1;
+	found = 1;
 
 	while (s[i])
 	{
-		if (find == 0)
-			new += s[i];
 		if (s[i] == c)
 		{
-			new += s[i];
-			find = 0;
+			found = 0;
+			return (&s[i]);
 		}
 		i++;
 	}
-	return (new);
+	if (found = 1)
+		return (NULL);
 }
