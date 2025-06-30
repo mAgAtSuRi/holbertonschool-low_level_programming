@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		if (haystack[j] == needle[0])
 		{
 			pos = j;
-			for (l = 0, l < len2; l++)
+			for (l = 0; l < len2; l++)
 			{
 				if (haystack[j] == needle[l])
 					count++;
