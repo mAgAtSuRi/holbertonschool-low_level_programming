@@ -11,7 +11,7 @@ int _strspn(char *s, char *accept)
 {
 	int n = 0, i = 0, len2 = 0;
 	int j;
-	int error = 0:
+	int error = 0;
 
 	while (accept[len2])
 		len2++;
@@ -26,7 +26,7 @@ int _strspn(char *s, char *accept)
 				n++;
 				for (j = 0; j < len2; j++)
 				{
-					if s[i + 1] != accept[j]
+					if (s[i + 1] != accept[j])
 						error++;
 				}
 			}
