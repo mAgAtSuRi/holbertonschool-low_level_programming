@@ -33,5 +33,6 @@ int _strspn(char *, char *);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *, char *);
 void print_chessboard(char (*a)[]);
+void print_diagsums(int *, int);
 
 #endif
