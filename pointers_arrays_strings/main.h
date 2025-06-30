@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+//Project 0
 int _putchar(char);
 void reset_to_98(int *);
 void swap_int(int *a, int *b);
@@ -13,6 +14,8 @@ void puts_half(char *str);
 void print_array(int *, int);
 char *_strcpy(char *, char *);
 int _atoi(char *s);
+
+//Project 1
 char *_strcat(char *, char *);
 char *_strncat(char *, char *, int);
 char *_strncpy(char *, char*, int);
@@ -25,8 +28,10 @@ char *rot13(char *);
 void print_number(int n);
 char *infinite_add(char *, char*, char *, int);
 
+//Project 2
 char *_memset(char *, char, unsigned int);
 char *_memcpy(char *, char *, unsigned int);
 char *_strchr(char *, char);
+int _strspn(char *, char *);
 
 #endif
