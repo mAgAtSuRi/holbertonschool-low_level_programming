@@ -21,12 +21,14 @@ char *_strstr(char *haystack, char *needle)
 	for (j = 0; j < i; j++)
 	{
 		if (haystack[j] == needle[0])
+		{
 			pos = j;
 			for (l = 0, l < len2; l++)
 			{
 				if (haystack[j] == needle[l])
 					count++;
 			}
+		}
 		if (count == len2)
 			return (haystack[pos]);
 		count = 0;
