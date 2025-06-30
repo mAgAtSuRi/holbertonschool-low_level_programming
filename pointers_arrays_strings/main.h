@@ -25,4 +25,5 @@ char *rot13(char *);
 void print_number(int n);
 char *infinite_add(char *, char*, char *, int);
 
+char *_memset(char *, char, unsigned int);
 #endif
