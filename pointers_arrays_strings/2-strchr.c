@@ -22,5 +22,5 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 	if (found == 1)
-		return ("NULL");
+		return (NULL);
 }
