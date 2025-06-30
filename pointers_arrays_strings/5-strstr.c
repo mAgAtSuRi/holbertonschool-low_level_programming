@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 	while (needle[len2])
 		len2++;
 	if (needle[0] == ' ')
-		return (&haystack);
+		return (&haystack[0]);
 	for (j = 0; j < i; j++)
 	{
 		test = j;
