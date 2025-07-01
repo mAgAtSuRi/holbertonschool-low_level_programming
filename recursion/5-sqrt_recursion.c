@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * find_sqrt - find the square root if it exists
+ * @n: number to check
+ * @guess: increment +1 from 0 and will be the square root
+ *
+ * Return: the result
+ */
 int find_sqrt(int n, int guess)
 {
 	if (guess * guess > n)
