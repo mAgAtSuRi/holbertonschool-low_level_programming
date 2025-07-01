@@ -13,7 +13,7 @@ int check_prime(int n, int guess)
 		return (0);
 	if (n % guess == 0)
 		return (1);
-	return(check_prime(n, guess + 1));
+	return (check_prime(n, guess + 1));
 }
 
 /**
@@ -24,7 +24,7 @@ int check_prime(int n, int guess)
  */
 int is_prime_number(int n)
 {
-	if (n < 0)
+	if (n <= 1)
 		return (0);
 	return (check_prime(n, 0));
 }
