@@ -8,6 +8,6 @@ int _strlen_recursion(char *);
 int factorial(int);
 int _pow_recursion(int, int);
 int _sqrt_recursion(int);
-int find_sqrt(int, 0);
+int find_sqrt(int, int 0);
 
 #endif
