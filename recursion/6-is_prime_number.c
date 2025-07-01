@@ -10,9 +10,9 @@
 int check_prime(int n, int guess)
 {
 	if (guess > n / 2)
-		return (0);
-	if (n % guess == 0)
 		return (1);
+	if (n % guess == 0)
+		return (0);
 	return (check_prime(n, guess + 1));
 }
 
