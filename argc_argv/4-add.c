@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j = 0;
+	int i, j;
 	int result = 0;
 
 	if (argc == 1)
@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
+			j == 0;
 			while (argv[i][j])
 			{
 				if (argv[i][j] < 48 || argv[i][j] > 57)
