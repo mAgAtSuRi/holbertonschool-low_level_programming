@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints all arguments 
+ * main - prints all arguments
  * @argc: number of arguments
  * @argv: list of arguments
  *
@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int i = 0;
 	(void)argc;
 
-	while (*argv[i])
+	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
 	return (0);
 }
