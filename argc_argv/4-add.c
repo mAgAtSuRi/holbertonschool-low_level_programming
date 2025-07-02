@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-		result += atoi(argc[i]);
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
 	return (0);
