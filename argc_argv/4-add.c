@@ -11,7 +11,6 @@
 int main(int argc, char *argv[])
 {
 	int i, j = 0;
-	(void)argc;
 	int result = 0;
 
 	if (argc == 1)
