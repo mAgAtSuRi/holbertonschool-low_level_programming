@@ -13,9 +13,11 @@ int strlen_recursion(char *s)
 	return (1 + strlen_recursion(s + 1));
 }
 /**
- * reverse _ reverse a string
- * @s: string to reverse
- *
+ * check_palindrome _ check if palindrome
+ * @s: string to check
+ * @start: starting index
+ * @end: ending index
+ * 
  * Return : the reversed string
  */
 int check_palindrome(char *s, int start, int end)
