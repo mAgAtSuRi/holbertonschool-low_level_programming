@@ -3,7 +3,7 @@
 /**
  * strlen_recursion - return length of string
  * @s: string to check
- * 
+ *
  * Return: the length
  */
 int strlen_recursion(char *s)
@@ -15,7 +15,7 @@ int strlen_recursion(char *s)
 /**
  * reverse _ reverse a string
  * @s: string to reverse
- * 
+ *
  * Return : the reversed string
  */
 int check_palindrome(char *s, int start, int end)
