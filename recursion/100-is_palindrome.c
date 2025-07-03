@@ -1,15 +1,24 @@
 #include "main.h"
 
+int strlen_recursion(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + strlen_recursion(s + 1));
+}
 /**
  * reverse _ reverse a string
  * @s: string to reverse
  * 
  * Return : the reversed string
  */
-char* reverse(char *s)
+int check_palindrome(char *s, int start, int end)
 {
-	if (*s != '\0')
-		return (*s + reverse(s + 1));
+	if (start >= end)
+		return (1)
+	if (s[start] != s[end])
+		return (0);
+	return (check_palindrome(s, start + 1, end - 1));
 }
 
 /**
@@ -20,7 +29,5 @@ Return: 1 if palindrome otherwise 0
 */
 int is_palindrome(char *s)
 {
-	if (reverse(s) == s)
-		return (1);
-	return (0);
+	return (check_palindrome(s, 0, strlen_recursion(s)));
 }
