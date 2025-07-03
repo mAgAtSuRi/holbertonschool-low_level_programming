@@ -13,7 +13,7 @@ int strlen_recursion(char *s)
 	return (1 + strlen_recursion(s + 1));
 }
 /**
- * check_palindrome _ check if palindrome
+ * check_palindrome - check if string is a palindrome
  * @s: string to check
  * @start: starting index
  * @end: ending index
