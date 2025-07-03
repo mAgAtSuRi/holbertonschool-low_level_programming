@@ -18,8 +18,6 @@ Return: 1 if palindrome otherwise 0
 */
 int is_palindrome(char *s)
 {
-	char *str;
-
 	if (reverse(s) == s)
 		return (1);
 	return (0);
