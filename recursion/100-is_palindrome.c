@@ -18,7 +18,7 @@ int strlen_recursion(char *s)
  * @start: starting index
  * @end: ending index
  *
- * Return : 1 if palindrome otherwise 0
+ * Return: 1 if palindrome otherwise 0
  */
 int check_palindrome(char *s, int start, int end)
 {
