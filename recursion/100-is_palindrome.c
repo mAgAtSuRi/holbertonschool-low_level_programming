@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * strlen_recursion - return length of string
+ * @s: string to check
+ * 
+ * Return: the length
+ */
 int strlen_recursion(char *s)
 {
 	if (*s == '\0')
@@ -22,12 +28,12 @@ int check_palindrome(char *s, int start, int end)
 }
 
 /**
-is_palindrome - check if palindrome
-@s: string to check
-
-Return: 1 if palindrome otherwise 0
-*/
+ *is_palindrome - check if palindrome
+ *@s: string to check
+ *
+ *Return: 1 if palindrome otherwise 0
+ */
 int is_palindrome(char *s)
 {
-	return (check_palindrome(s, 0, strlen_recursion(s)));
+	return (check_palindrome(s, 0, strlen_recursion(s)) - 1);
 }
