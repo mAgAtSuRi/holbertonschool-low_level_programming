@@ -4,7 +4,7 @@
  * str_concat - concatenates two strings
  * @s1: first string
  * @s2: second string
- * 
+ *
  * Return: pointer to the new concatenates string
  */
 char *str_concat(char *s1, char *s2)
@@ -20,9 +20,14 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 	while (s1[i] != '\0')
+	{
 		s[i] = s1[i];
+		i++;
+	}
 	while (s2[j] != '\0')
+	{
 		s[len1 + j] = s2[j];
+		j++;
+	}
 	s[len1 +len2] = '\0';
-	
 }
