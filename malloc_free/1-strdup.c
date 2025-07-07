@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * *_strdup - create a pointer to the string str
@@ -11,10 +10,13 @@ char *_strdup(char *str)
 {
 	char *s;
 	unsigned int i;
+	int len;
 
 	if (str == NULL)
 		return (NULL);
-	s = malloc(strlen(str) + 1);
+	for (i = 0; str[i] != '\0'; i++)
+		len++;
+	s = malloc(len + 1);
 	if (s == NULL)
 		return (NULL);
 	for (i = 0; i < sizeof(str); i++)
