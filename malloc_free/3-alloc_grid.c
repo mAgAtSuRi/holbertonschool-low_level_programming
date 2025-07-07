@@ -29,9 +29,9 @@ int **alloc_grid(int width, int height)
 			for (j = 0; j < i; j++)
 				free(ptr[j]);
 			free(ptr);
-			return (NULL);	
+			return (NULL);
 		}
-		for (j = 0; j <width; j++)
+		for (j = 0; j < width; j++)
 			ptr[i][j] = 0;
 	}
 	return (ptr);
