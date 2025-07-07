@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - create a pointer to the string str
+ * _strdup - create a pointer to the string str
  * @str: string to copy
  *
  * Return: a pointer to the string in a new space
@@ -10,7 +10,7 @@ char *_strdup(char *str)
 {
 	char *s;
 	unsigned int i;
-	unsigned int len;
+	unsigned int len = 0;
 
 	if (str == NULL)
 		return (NULL);
