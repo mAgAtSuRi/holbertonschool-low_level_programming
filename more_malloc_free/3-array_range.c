@@ -21,5 +21,8 @@ int *array_range(int min, int max)
 	arr[0] = min;
 	for (i = 1; i < len; i++)
 		arr[i] = arr[i - 1] + 1;
+		/* Amélioration possible
+		arr[i] = min + i;
+		*/
 	return (arr);
 }
