@@ -14,4 +14,6 @@ typedef struct dog
 	char *owner;
 } dogt;
 
+void init_dog(struct dog, char, float, char);
+
 #endif
