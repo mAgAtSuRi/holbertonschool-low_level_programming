@@ -9,5 +9,5 @@ void print_dog(dog_t *d)
 {
 	if (d == NULL)
 		return;
-	printf("Name : %s\n Age : %f\n Owner : %s", d->name, d->age, d->owner);
+	printf("Name : %s\nAge : %f\nOwner : %s\n", d->name, d->age, d->owner);
 }
