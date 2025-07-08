@@ -15,7 +15,7 @@ void print_dog(dog_t *d)
 		printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
 	if (d->owner == NULL)
-		printf("Age: (nil)\n");
+		printf("Owner: (nil)\n");
 	else
 		printf("Owner: %s\n", d->owner);
 }
