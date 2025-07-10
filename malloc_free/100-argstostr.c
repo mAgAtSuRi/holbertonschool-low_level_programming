@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 		while (av[i][len_word])
 			len_word++;
 		for (j = 0; j < len_word; j++)
-			str[j + len] = av[i][j];	
+			str[j + len] = av[i][j];
 		str[len_word + len] = '\n';
 		len += len_word + 1;
 	}
