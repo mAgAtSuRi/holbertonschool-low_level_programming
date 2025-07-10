@@ -37,6 +37,6 @@ char *argstostr(int ac, char **av)
 		str[len_word + len] = '\n';
 		len += len_word + 1;
 	}
-	str[len_str] = '\0';
+	str[len] = '\0';
 	return (str);
 }
