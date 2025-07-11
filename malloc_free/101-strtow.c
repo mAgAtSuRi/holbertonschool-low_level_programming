@@ -28,13 +28,21 @@ char **strtow(char *str)
 	char **ptr;
 	int *p;
 
+	if (str == NULL || str == "")
+		return (NULL);
+
 	while (str[len])
 		len++;
+
 	num = number_word(str, len);
+	if (num == 0)
+		return (NULL);
+
 	p = malloc(sizeof(int) * num);
 	if (p == NULL)
 		return (NULL);
-	ptr = malloc(sizeof(char *) * num);
+
+	ptr = malloc(sizeof(char *) * (num + 1));
 	if (ptr == NULL)
 		return (NULL);
 
@@ -56,21 +64,22 @@ char **strtow(char *str)
 	{
 		j = p[i];
 		num_letter = 0;
-		while (str[j] != ' ' && str[j] != '\0')
-		{
+
+		while (str[j + num_letter] != ' ' && str[j + num_letter] != '\0')
 			num_letter++;
-			j++;
-		}
+
 		ptr[i] = malloc(sizeof(char) * num_letter + 1);
 		if (ptr[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
 				free(ptr[j]);
 			free(ptr);
+			return(NULL);
 		}
-		j = p[i];
-		for (i = 0; i < num_letter; i++)
-			ptr[i][j] = str[j + i];		
+
+		for (j = 0; j < num_letter; j++)
+			ptr[i][j] = str[p[i] + j];
 	}
+	
 	return (ptr);
 }
