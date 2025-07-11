@@ -22,29 +22,29 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	while (atoi(argv[1]) >= coin_max)
+	while (atoi(argv[1]) - coin_max >= 25)
 	{
 		num_coin += 1;
 		coin_max += 25;
 	}
 	total_coin += num_coin;
 	rest = atoi(argv[1]) - coin_max;
-	while (rest >= 10)
+	while (rest - 10 >= 10)
 	{
 		num_coin++;
 		rest -= 10;
 	}
-	while (rest >= 5)
+	while (rest - 5 >= 5)
 	{
 		num_coin++;
 		rest -= 5;
 	}
-	while (rest >= 2)
+	while (rest - 2 >= 2)
 	{
 		num_coin++;
 		rest -= 2;
 	}
-	while (rest >= 1)
+	while (rest - 1 >= 1)
 	{
 		num_coin++;
 		rest -= 1;
