@@ -86,6 +86,6 @@ char **strtow(char *str)
 			ptr[i][j] = str[p[i] + j];
 		ptr[i][j] = '\0';
 	}
-
+	free(p);
 	return (ptr);
 }
