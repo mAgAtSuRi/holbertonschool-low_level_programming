@@ -34,7 +34,7 @@ char **strtow(char *str)
 	p = malloc(sizeof(int) * num);
 	if (p == NULL)
 		return (NULL);
-	*ptr = malloc(sizeof(char *) * num);
+	ptr = malloc(sizeof(char *) * num);
 	if (ptr == NULL)
 		return (NULL);
 
