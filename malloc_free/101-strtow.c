@@ -26,11 +26,12 @@ char **strtow(char *str)
 {
 	int len = 0, i, j, num, num_letter = 0, pos = 0;
 	char **ptr;
-	
+	int *p;
+
 	while (str[len])
 		len++;
 	num = number_word(str, len);
-	int *p = malloc(sizeof(int) * num);
+	p = malloc(sizeof(int) * num);
 	if (p == NULL)
 		return (NULL);
 	*ptr = malloc(sizeof(char *) * num);
