@@ -35,7 +35,6 @@ char **strtow(char *str)
 	if (*ptr == NULL)
 		return (NULL);
 
-	//Fill char_pos with the position of each starting word
 	for (i = 1; i < len; i++)
 	{
 		if (str[0] != ' ')
@@ -50,7 +49,6 @@ char **strtow(char *str)
 		} 
 	}
 
-	//Create and fill wrd with a word
 	for (i = 0; i < num; i++)
 	{
 		j = p[i];
