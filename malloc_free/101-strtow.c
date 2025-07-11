@@ -45,14 +45,15 @@ char **strtow(char *str)
 	ptr = malloc(sizeof(char *) * (num + 1));
 	if (ptr == NULL)
 		return (NULL);
-
+		
+	if (str[0] != ' ')
+	{
+		p[0] = 0;
+		pos++;
+	}
 	for (i = 1; i < len; i++)
 	{
-		if (str[0] != ' ')
-		{
-			p[0] = 0;
-			pos++;
-		}
+
 		if (str[i - 1] == ' ' && str[i] != ' ')
 		{
 			p[pos] = i;
