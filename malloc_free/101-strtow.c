@@ -25,7 +25,7 @@ int number_word(char *str, int len)
 char **strtow(char *str)
 {
 	int len, i, j, num, num_letter = 0, pos = 0;
-	int *char_pos[num];
+	int *p = malloc(sizeof(int) * num);
 	char **ptr;
 	
 	while (str[len])
@@ -40,12 +40,12 @@ char **strtow(char *str)
 	{
 		if (str[0] != ' ')
 		{
-			char_pos[0] = 0;
+			p[0] = 0;
 			pos++;
 		}
 		if (str[i - 1] == ' ' && str[i] != ' ')
 		{
-			char_pos[pos] = i;
+			p[pos] = i;
 			pos++;
 		} 
 	}
@@ -53,7 +53,7 @@ char **strtow(char *str)
 	//Create and fill wrd with a word
 	for (i = 0; i < num; i++)
 	{
-		j = char_pos[i];
+		j = p[i];
 		while (str[j] != ' ' || str[j] != '\0')
 		{
 			num_letter++;
@@ -66,7 +66,7 @@ char **strtow(char *str)
 				free(ptr[j]);
 			free(ptr);
 		}
-		j = char_pos[i];
+		j = p[i];
 		for (i = 0; i < num_letter; i++)
 			ptr[i] = str[j + i];		
 	}
