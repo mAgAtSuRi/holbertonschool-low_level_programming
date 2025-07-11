@@ -24,15 +24,17 @@ int number_word(char *str, int len)
  */
 char **strtow(char *str)
 {
-	int len, i, j, num, num_letter = 0, pos = 0;
-	int *p = malloc(sizeof(int) * num);
+	int len = 0, i, j, num, num_letter = 0, pos = 0;
 	char **ptr;
 	
 	while (str[len])
 		len++;
 	num = number_word(str, len);
-	*ptr = malloc(sizeof(ptr) * num);
-	if (*ptr == NULL)
+	int *p = malloc(sizeof(int) * num);
+	if (p == NULL)
+		return (NULL);
+	*ptr = malloc(sizeof(char *) * num);
+	if (ptr == NULL)
 		return (NULL);
 
 	for (i = 1; i < len; i++)
@@ -52,7 +54,8 @@ char **strtow(char *str)
 	for (i = 0; i < num; i++)
 	{
 		j = p[i];
-		while (str[j] != ' ' || str[j] != '\0')
+		num_letter = 0;
+		while (str[j] != ' ' && str[j] != '\0')
 		{
 			num_letter++;
 			j++;
@@ -66,7 +69,7 @@ char **strtow(char *str)
 		}
 		j = p[i];
 		for (i = 0; i < num_letter; i++)
-			ptr[i] = str[j + i];		
+			ptr[i][j] = str[j + i];		
 	}
 	return (ptr);
 }
