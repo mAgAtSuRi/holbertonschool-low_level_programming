@@ -5,7 +5,7 @@
  * main - entry point
  * @argc: number of arguments
  * @argv: list of pointers arguments
- * 
+ *
  * Return: 0 or 1 if error
  */
 int main(int argc, char **argv)
