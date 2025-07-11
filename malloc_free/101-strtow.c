@@ -88,5 +88,7 @@ char **strtow(char *str)
 	}
 	ptr[num] = NULL;
 	free(p);
+	for (i = 0; i < num, i++)
+		free(ptr[i]);
 	return (ptr);
 }
