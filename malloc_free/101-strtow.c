@@ -44,7 +44,10 @@ char **strtow(char *str)
 
 	ptr = malloc(sizeof(char *) * (num + 1));
 	if (ptr == NULL)
+	{
+		free(p);
 		return (NULL);
+	}
 
 	if (str[0] != ' ')
 	{
