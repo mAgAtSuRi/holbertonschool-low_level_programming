@@ -79,6 +79,7 @@ char **strtow(char *str)
 
 		for (j = 0; j < num_letter; j++)
 			ptr[i][j] = str[p[i] + j];
+		ptr[i][j] = '\0';
 	}
 
 	return (ptr);
