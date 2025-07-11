@@ -28,7 +28,7 @@ char **strtow(char *str)
 	char **ptr;
 	int *p;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	while (str[len])
@@ -80,6 +80,6 @@ char **strtow(char *str)
 		for (j = 0; j < num_letter; j++)
 			ptr[i][j] = str[p[i] + j];
 	}
-	
+
 	return (ptr);
 }
