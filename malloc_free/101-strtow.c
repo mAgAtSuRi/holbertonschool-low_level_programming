@@ -45,7 +45,7 @@ char **strtow(char *str)
 	ptr = malloc(sizeof(char *) * (num + 1));
 	if (ptr == NULL)
 		return (NULL);
-		
+
 	if (str[0] != ' ')
 	{
 		p[0] = 0;
@@ -74,6 +74,7 @@ char **strtow(char *str)
 		{
 			for (j = 0; j < i; j++)
 				free(ptr[j]);
+			free(p);
 			free(ptr);
 			return(NULL);
 		}
