@@ -10,7 +10,8 @@
  */
 int main(int argc, char **argv)
 {
-	int rest = 0, num_coin = 1, coin_max = 25, total_coin = 0;
+	int i, rest = atoi(argv[1]), num_coin = 0;
+	int list_coin[5] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -22,32 +23,14 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (0);
 	}
-	while (atoi(argv[1]) - coin_max >= 25)
+
+	for (i = 0; i < 5; i++)
 	{
-		num_coin += 1;
-		coin_max += 25;
-	}
-	total_coin += num_coin;
-	rest = atoi(argv[1]) - coin_max;
-	while (rest >= 10)
-	{
-		num_coin++;
-		rest -= 10;
-	}
-	while (rest >= 5)
-	{
-		num_coin++;
-		rest -= 5;
-	}
-	while (rest >= 2)
-	{
-		num_coin++;
-		rest -= 2;
-	}
-	while (rest >= 1)
-	{
-		num_coin++;
-		rest -= 1;
+		while (rest >= list_coin[i])
+		{
+			rest -= list_coin[i];
+			num_coin++;
+		}
 	}
 	printf("%d\n", num_coin);
 	return (0);
