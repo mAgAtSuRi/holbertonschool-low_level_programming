@@ -31,7 +31,10 @@ int main(int argc, char **argv)
 		return (99);
 	}
 
-	if ((argv[2] == '%' || argv[2] == '/') && argv[1] == '0')
+	if (
+	(strcmp(argv[2], '%') == 0
+	 || strcmp(argv[2], '/') == 0)
+	 && strcmp(argv[1], '0') == 0)
 	{
 		printf('Error');
 		return (100);
