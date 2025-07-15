@@ -20,22 +20,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
-	
-	if (
-    strcmp(argv[2], "+") != 0 &&
-    strcmp(argv[2], "-") != 0 &&
-    strcmp(argv[2], "*") != 0 &&
-    strcmp(argv[2], "/") != 0 &&
-    strcmp(argv[2], "%") != 0)
-	{
-		printf("Error\n");
-		return (99);
-	}
 
-	if (
-	(strcmp(argv[2], "%") == 0
-	 || strcmp(argv[2], "/") == 0)
-	 && strcmp(argv[1], "0") == 0)
+	if ((argv[2][0] == "%" || argv[2][0] == "/") && argv[3][0] == "0")
 	{
 		printf("Error");
 		return (100);
