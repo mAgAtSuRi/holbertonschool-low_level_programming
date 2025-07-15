@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main -entry point
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		printf('Error');
 		return (100);
 	}
-	
+
 	p = argv[1];
 	result = p(atoi(argv[2]), atoi(argv[4]));
 	printf("%d\n", result);
