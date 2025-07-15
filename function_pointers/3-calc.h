@@ -1,6 +1,13 @@
 #ifndef CALC_H
 #define CALC_H
 
+/**
+ * struct op - Structure of an operator and its function
+ * @op: operator in string
+ * @f: pointer to the function
+ *
+ * Cette structure permet d'associer un opérateur à sa fonction correspondante.
+ */
 typedef struct op
 {
 char *op;
