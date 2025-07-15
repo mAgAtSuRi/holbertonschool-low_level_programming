@@ -1,8 +1,8 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
 
 int _putchar(char c);
-void print_name(char *, void (*f)(char *));
-void print_string(char *);
+void print_string(char *str);
+void print_name(char *name, void (*f)(char *));
 
-#endif
+#endif /* FUNCTION_POINTERS_H */
