@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	 || strcmp(argv[2], "/") == 0)
 	 && strcmp(argv[1], "0") == 0)
 	{
-		printf('Error');
+		printf("Error");
 		return (100);
 	}
 
