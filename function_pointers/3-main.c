@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 /**
@@ -40,7 +41,7 @@ int main(int argc, char **argv)
 		return (100);
 	}
 
-	p = argv[0];
+	p = get_op_func(argv[2]);
 	result = p(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", result);
 
