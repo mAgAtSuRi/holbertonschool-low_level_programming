@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 		return (98);
 	}
 
-	if ((argv[2][0] == "%" || argv[2][0] == "/") && argv[3][0] == "0")
+	if ((argv[2][0] == '%' || argv[2][0] == '/') && argv[3][0] == '0')
 	{
 		printf("Error");
 		return (100);
