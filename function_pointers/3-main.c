@@ -13,26 +13,26 @@ int main(int argc, char **argv)
 	int (*p)(int, int);
 	int result;
 
-	if (argc != 5)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
 	
-	if (argv[3] != "+" && argv[3] != "-" && argv[3] != "*" && argv[3] != "/" && argv[3] != '%')
+	if (argv[2] != "+" && argv[2] != "-" && argv[2] != "*" && argv[2] != "/" && argv[2] != '%')
 	{
 		printf("Error\n");
 		return (99);
 	}
 
-	if ((argv[3] == '%' || argv[3] == '/') && argv[2] == '0')
+	if ((argv[2] == '%' || argv[2] == '/') && argv[1] == '0')
 	{
 		printf('Error');
 		return (100);
 	}
 
-	p = argv[1];
-	result = p(atoi(argv[2]), atoi(argv[4]));
+	p = argv[0];
+	result = p(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", result);
 
 	return (0);
