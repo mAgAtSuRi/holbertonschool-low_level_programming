@@ -65,8 +65,8 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[j].letter)
 			{
-				types[j].p(args);
 				printf("%s", separator);
+				types[j].p(args);
 				separator = ", ";
 			}
 			j++;
