@@ -35,9 +35,10 @@ void print_f(va_list args)
  */
 void print_s(va_list args)
 {
-	if (va_arg(args, char *) == NULL)
+	char *s = va_arg(args, char *);
+	if (s == NULL)
 		printf("(nil)");
-	printf("%s", va_arg(args, char *));
+	printf("%s", s);
 }
 
 /**
