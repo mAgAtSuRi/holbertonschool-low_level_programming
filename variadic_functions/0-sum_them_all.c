@@ -4,7 +4,7 @@
 /**
  * sum_them_all - calculate the sum of all parameters
  * @n: number of parameters
- * 
+ *
  * Return: sum of parameters
  */
 int sum_them_all(const unsigned int n, ...)
@@ -15,7 +15,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	if (n == 0)
 		return (0);
-	
+
 	va_start(args, n);
 
 	for (i = 0; i < n; i++)
