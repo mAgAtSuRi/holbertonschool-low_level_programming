@@ -46,6 +46,7 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	int i = 0, j = 0;
+	char *separator = "";
 
 	type_t types[] = {
 	{'c', print_c},
@@ -65,7 +66,8 @@ void print_all(const char * const format, ...)
 			if (format[i] == types[j].letter)
 			{
 				types[j].p(args);
-				printf(", ");
+				printf("%s", separator);
+				separator = ", ";
 			}
 			j++;
 		}
