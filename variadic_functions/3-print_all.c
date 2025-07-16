@@ -59,6 +59,7 @@ void print_all(const char * const format, ...)
 
 	while (format[i])
 	{
+		j = 0;
 		while (types[j].letter != 0)
 		{
 			if (format[i] == types[j].letter)
