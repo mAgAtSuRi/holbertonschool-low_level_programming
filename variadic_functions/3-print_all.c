@@ -35,6 +35,8 @@ void print_f(va_list args)
 void print_s(va_list args)
 {
 	char *s = va_arg(args, char *);
+	if (s == NULL)
+		printf("(nil)");
 	printf("%s", s);
 }
 
@@ -58,13 +60,8 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	if (format == NULL)
-	{
-		putchar('\n');
-		return;
-	}
-	
-	while (format[i])
+
+	while (format[i] && format != NULL)
 	{
 		j = 0;
 		while (types[j].letter != 0)
@@ -79,5 +76,5 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 }
