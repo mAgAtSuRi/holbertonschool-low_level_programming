@@ -10,4 +10,9 @@ void print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }
+$
+void print(char* s)
+{
+	printf("%s", s)
+}
 
