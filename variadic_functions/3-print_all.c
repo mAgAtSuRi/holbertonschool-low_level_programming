@@ -35,6 +35,7 @@ void print_f(va_list args)
 void print_s(va_list args)
 {
 	char *s = va_arg(args, char *);
+
 	if (s == NULL)
 	{
 		printf("(nil)");
@@ -62,7 +63,6 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-
 
 	while (format != NULL && format[i])
 	{
