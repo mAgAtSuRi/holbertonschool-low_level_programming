@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 
 /**
  * print_c - print a character
@@ -61,6 +60,8 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
+	if (format == NULL)
+		return;
 	while (format[i])
 	{
 		j = 0;
