@@ -59,7 +59,11 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 
 	if (format == NULL)
+	{
+		putchar('\n');
 		return;
+	}
+	
 	while (format[i])
 	{
 		j = 0;
