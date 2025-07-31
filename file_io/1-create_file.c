@@ -3,7 +3,7 @@
 /**
  * create_file - creates a new file
  * @filename: file name
- * @content: string to write
+ * @text_content: string to write
  *
  * Return: 1 succes otherwise -1
  */
@@ -29,5 +29,6 @@ int create_file(const char *filename, char *text_content)
 	if (n_write != i)
 		return (-1);
 
+	close(fd);
 	return (1);
 }
