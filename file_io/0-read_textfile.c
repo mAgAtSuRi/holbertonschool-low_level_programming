@@ -29,5 +29,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (n_written == n_read)
 		return (n_written);
 	else
-		return (-1);
+		return (0);
 }
