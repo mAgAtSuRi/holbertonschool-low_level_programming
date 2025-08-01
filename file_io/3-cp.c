@@ -60,7 +60,7 @@ void cp(char *file1, char *file2)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
 		close_file(fd1, fd2);
 		exit (98);		
-		}	
+	}	
 	close_file(fd1, fd2);
 }
 
