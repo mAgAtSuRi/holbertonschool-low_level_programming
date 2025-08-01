@@ -81,5 +81,5 @@ int main(int argc, char **argv)
 		exit(97);
 	}
 	cp(argv[1], argv[2]);
-	return(0);
+	return (0);
 }
