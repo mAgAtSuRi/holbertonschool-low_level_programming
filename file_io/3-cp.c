@@ -45,7 +45,7 @@ void cp(char *file1, char *file2)
 		exit (99);
 	}
 
-	while ((n_read = read(fd1, buffer, 1024)) > 0)
+	while ((n_read = read(fd1, buffer, 1024)) != 0)
 	{
 		if (n_read == -1)
 		{
@@ -61,12 +61,6 @@ void cp(char *file1, char *file2)
 			exit (99);
 		}
 	}
-	if (n_read == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
-		close_file(fd1, fd2);
-		exit (98);		
-	}	
 	close_file(fd1, fd2);
 }
 
