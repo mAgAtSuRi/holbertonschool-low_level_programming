@@ -28,39 +28,40 @@ void cp(char *file1, char *file2)
 {
 	int fd1, fd2;
 	ssize_t n_read, n_written;
-	void *buffer[1024];
+	char buffer[1024];
 
 	fd1 = open(file1, O_RDONLY);
 		if (fd1 == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
 			exit (98);
 		}
 
 	fd2 = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	if (fd2 == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file2);
+		close(fd1);
+		exit (98);
+	}
+
 	while ((n_read = read(fd1, buffer, 1024)) != 0)
 	{
 		if (n_read == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file1);
 			close_file(fd1, fd2);
 			exit (98);		
 		}
 		n_written = write(fd2, buffer, n_read);
 		if (n_written == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s", file2);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 			close_file(fd1, fd2);
 			exit (99);
 		}
 		n_read = read(fd1, buffer, 1024);
 	}
-	if (n_read == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s", file1);
-			close_file(fd1, fd2);
-			exit (98);		
-		}
 	close_file(fd1, fd2);
 }
 
