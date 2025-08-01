@@ -4,7 +4,7 @@
  * hash_table_get - retrieve value associated with a key
  * @ht: hash table to check
  * @key: key to look for
- * 
+ *
  * Return: value associated or NULL if cant find
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
@@ -13,7 +13,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *tmp;
 
 	if (ht == NULL || key == NULL || *key == '\0')
-    	return (NULL);
+		return (NULL);
 
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->array[index];
