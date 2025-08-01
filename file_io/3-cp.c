@@ -60,7 +60,6 @@ void cp(char *file1, char *file2)
 			close_file(fd1, fd2);
 			exit (99);
 		}
-		n_read = read(fd1, buffer, 1024);
 	}
 	close_file(fd1, fd2);
 }
