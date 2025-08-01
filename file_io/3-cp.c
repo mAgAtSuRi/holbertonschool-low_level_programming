@@ -40,9 +40,9 @@ void cp(char *file1, char *file2)
 	fd2 = open(file2, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd2 == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file2);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 		close(fd1);
-		exit(98);
+		exit(99);
 	}
 
 	while ((n_read = read(fd1, buffer, 1024)) > 0)
