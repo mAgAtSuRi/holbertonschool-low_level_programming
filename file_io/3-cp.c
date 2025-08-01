@@ -48,7 +48,7 @@ void cp(char *file1, char *file2)
 	while ((n_read = read(fd1, buffer, 1024)) > 0)
 	{
 		n_written = write(fd2, buffer, n_read);
-		if (n_written == -1)
+		if (n_written == -1 || n_written != n_read)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file2);
 			close_file(fd1, fd2);
