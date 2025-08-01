@@ -45,7 +45,7 @@ void cp(char *file1, char *file2)
 		exit (99);
 	}
 
-	while ((n_read = read(fd1, buffer, 1024)) != 0)
+	while ((n_read = read(fd1, buffer, 1024)) > 0)
 	{
 		if (n_read == -1)
 		{
